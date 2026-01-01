@@ -12,11 +12,9 @@ fn main() {
             }
             Err(e) => {
                 eprintln!("\n{}\n", e);
-                std::process::exit(1);
             }
         }
     } else {
         println!("Cancelled.");
-        std::process::exit(0);
     }
 }
