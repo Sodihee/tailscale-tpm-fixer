@@ -19,7 +19,7 @@ The tool works by removing Tailscale's TPM-bound state files, allowing you to re
 
 ## Installation
 
-Download the latest pre-built binaries from the GitHub releases page [Github release]().
+Download the latest pre-built binaries from the GitHub releases page [Github release](https://github.com/mirseo/tailscale-tpm-fixer/releases/latest).
 
 ## Requirements
 
