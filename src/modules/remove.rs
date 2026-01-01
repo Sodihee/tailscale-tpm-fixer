@@ -3,25 +3,27 @@ use std::path::Path;
 
 #[cfg(target_os = "windows")]
 pub fn remove_tailscale_files() -> Result<(), String> {
+    let username = std::env::var("USERNAME").unwrap_or_else(|_| "".to_string());
+    let user_appdata = format!(r"C:\Users\{}\AppData\Local\Tailscale", username);
+
     let paths = vec![
-        r"C:\ProgramData\Tailscale",
-        &format!(r"C:\Users\{}\AppData\Local\Tailscale",
-            std::env::var("USERNAME").unwrap_or_else(|_| "".to_string())),
+        r"C:\ProgramData\Tailscale".to_string(),
+        user_appdata,
     ];
 
-    remove_files(&paths)
+    remove_files_owned(&paths)
 }
 
 #[cfg(target_os = "linux")]
 pub fn remove_tailscale_files() -> Result<(), String> {
     let paths = vec![
-        "/var/lib/tailscale/tailscaled.state",
+        "/var/lib/tailscale/tailscaled.state".to_string(),
     ];
 
-    remove_files(&paths)
+    remove_files_owned(&paths)
 }
 
-fn remove_files(paths: &[&str]) -> Result<(), String> {
+fn remove_files_owned(paths: &[String]) -> Result<(), String> {
     let mut had_errors = false;
     let mut permission_error = false;
 
